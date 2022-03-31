@@ -1,0 +1,71 @@
+
+public class StringLab {
+
+	public static void main(String[] args) {
+		/* Test capitalize
+		capitalize("test");
+		capitalize("");
+		capitalize("l");
+		*/
+		
+		/* Test wheresWaldo
+		wheresWaldo("test");
+		wheresWaldo("waldowaldo");
+		wheresWaldo("gggggggwaldo");
+		*/
+		
+		// Test firstThingsFirst
+		firstThingsFirst("A", "C");
+		firstThingsFirst("a", "A");
+		firstThingsFirst("I don't know the alphabet", "and my name is Tim");
+	}
+	
+	public static void capitalize(String word) {
+		if(word.length() < 2) {
+			if(word.length() == 0) {
+				return;
+			}
+			System.out.println(word.toUpperCase());
+			return;
+		}
+		
+		System.out.print(word.substring(0,1).toUpperCase());
+		System.out.println(word.substring(1).toLowerCase());
+	}
+	
+	public static void wheresWaldo(String phrase) {
+		int location = phrase.toLowerCase().indexOf("waldo");
+		if(location == -1) {
+			System.out.println("Error: Waldo not found");
+			return;
+		}
+		
+		System.out.println(location);
+	}
+	
+	public static void firstThingsFirst(String a, String b) {
+		if(a.compareTo(b) < 0) {
+			System.out.println(a + " " + b);
+			return;
+		}
+		
+		System.out.println(b + " " + a);
+	}
+	
+	public static void reverse(String s) {
+		
+	}
+	
+	public static void soLong(String a, String b) {
+		
+	}
+	
+	public static void afterMath(String phrase) {
+		
+	}
+	
+	public static void letterize(String word) {
+		
+	}
+
+}
