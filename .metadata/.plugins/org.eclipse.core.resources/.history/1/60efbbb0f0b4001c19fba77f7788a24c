@@ -74,7 +74,7 @@ public class StringLab {
 		letterize("");
 		System.out.println("letterize(\"one letter at a time\"): ");
 		letterize("one letter at a time");
-		System.out.println("");
+		System.out.println("\n");
 		
 		// Test camelCase
 		System.out.println("**Test camelCase**");
@@ -84,8 +84,6 @@ public class StringLab {
 		camelCase("");
 		System.out.print("\ncamelCase(\"alreadyInCamelCase\"): ");
 		camelCase("alreadyInCamelCase");
-		System.out.println("");
-
 	}
 	
 	public static void capitalize(String word) {

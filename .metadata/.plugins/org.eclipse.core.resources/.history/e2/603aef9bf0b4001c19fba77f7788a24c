@@ -74,18 +74,15 @@ public class StringLab {
 		letterize("");
 		System.out.println("letterize(\"one letter at a time\"): ");
 		letterize("one letter at a time");
-		System.out.println("");
 		
 		// Test camelCase
 		System.out.println("**Test camelCase**");
-		System.out.print("camelCase(\"Camel case lol\"): ");
+		System.out.print("camelCase(\"camel case lol\"): ");
 		camelCase("camel case lol");
 		System.out.print("\ncamelCase(\"\"): ");
 		camelCase("");
-		System.out.print("\ncamelCase(\"alreadyInCamelCase\"): ");
+		System.out.print("camelCase(\"alreadyInCamelCase\"): ");
 		camelCase("alreadyInCamelCase");
-		System.out.println("");
-
 	}
 	
 	public static void capitalize(String word) {

@@ -3,89 +3,52 @@ public class StringLab {
 
 	public static void main(String[] args) {
 		// Test capitalize
-		System.out.println("**Test capitalize**");
+		System.out.println("Test capitalize:");
 		System.out.print("capitalize(\"all lowercase\"): ");
 		capitalize("all lowercase");
-		System.out.print("\ncapitalize(\" \"): ");
+		System.out.println("\ncapitalize(\"\"): ");
 		capitalize("");
-		System.out.print("\ncapitalize(\"l\"): "); 
+		System.out.println("\ncapitalize(\"l\"): "); 
 		capitalize("l");
-		System.out.println("\n");
 		
-		// Test wheresWaldo
-		System.out.println("**Test wheresWaldo**");
-		System.out.print("wheresWaldo(\"test\"): ");
+		
+		/* Test wheresWaldo
 		wheresWaldo("test");
-		System.out.print("\nwheresWaldo(\"waldowaldo\"): ");
 		wheresWaldo("waldowaldo");
-		System.out.print("\nwheresWaldo(\"gggggggwaldo\"): ");
 		wheresWaldo("gggggggwaldo");
-		System.out.println("\n");
+		*/
 		
-		// Test firstThingsFirst
-		System.out.println("**Test firstThingsFirst**");
-		System.out.print("firstThingsFirst(\"A\", \"C\"): ");
+		/* Test firstThingsFirst
 		firstThingsFirst("A", "C");
-		System.out.print("\nfirstThingsFirst(\"a\", \"A\"): ");
 		firstThingsFirst("a", "A");
-		System.out.print("\nfirstThingsFirst(\"I don't know the alphabet\", \"and my name is Tim\"): ");
 		firstThingsFirst("I don't know the alphabet", "and my name is Tim");
-		System.out.print("\nfirstThingsFirst(\"A\", \"A\"): ");
 		firstThingsFirst("A", "A");
-		System.out.println("\n");
+		*/
 		
-		// Test reverse
-		System.out.println("**Test reverse**");
-		System.out.print("reverse(\"forward\"): ");
+		/* Test reverse
 		reverse("forward");
-		System.out.print("\nreverse(\"\"): ");
 		reverse("");
-		System.out.print("\nreverse(\"sdrawkcab\"): ");
 		reverse("sdrawkcab");
-		System.out.print("\nreverse(\"1\"): ");
 		reverse("1");
-		System.out.println("\n");
+		*/
 		
-		// Test soLong
-		System.out.println("**Test soLong**");
-		System.out.print("soLong(\"bean\", \"pea\"): ");
+		/* Test soLong
 		soLong("bean", "pea");
-		System.out.print("\nsoLong(\"tart\", \"trap\"): ");
 		soLong("tart", "trap");
-		System.out.println("\n");
+		*/
 		
-		// Test afterMath
-		System.out.println("**Test afterMath**");
-		System.out.print("afterMath(\"She aced the mathematics test!\"): ");
+		/* Test afterMath
 		afterMath("She aced the mathematics test!");
-		System.out.print("\nafterMath(\"My floor mat is so keen!\"): ");
 		afterMath("My floor mat is so keen!");
-		System.out.print("\nafterMath(\"\"): ");
 		afterMath("");
-		System.out.print("\nafterMath(\"Math wooooo! mAtH\"): ");
 		afterMath("Math wooooo! mAtH");
-		System.out.println("\n");
-
-		// Test letterize
-		System.out.println("**Test letterize**");
-		System.out.println("letterize(\"Java\"): ");
-		letterize("Java");
-		System.out.println("letterize(\"\"): ");
-		letterize("");
-		System.out.println("letterize(\"one letter at a time\"): ");
-		letterize("one letter at a time");
-		System.out.println("");
+		*/
 		
-		// Test camelCase
-		System.out.println("**Test camelCase**");
-		System.out.print("camelCase(\"Camel case lol\"): ");
-		camelCase("camel case lol");
-		System.out.print("\ncamelCase(\"\"): ");
-		camelCase("");
-		System.out.print("\ncamelCase(\"alreadyInCamelCase\"): ");
-		camelCase("alreadyInCamelCase");
-		System.out.println("");
-
+		/* Test letterize
+		letterize("Java");
+		letterize("");
+		letterize("one letter at a time");
+		*/
 	}
 	
 	public static void capitalize(String word) {

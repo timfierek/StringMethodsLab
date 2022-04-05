@@ -84,8 +84,6 @@ public class StringLab {
 		camelCase("");
 		System.out.print("\ncamelCase(\"alreadyInCamelCase\"): ");
 		camelCase("alreadyInCamelCase");
-		System.out.println("");
-
 	}
 	
 	public static void capitalize(String word) {
