@@ -79,9 +79,7 @@ public class StringLab {
 			if(word.length() == 0) {
 				return word;
 			}
-			else {
-				return word.toUpperCase();
-			}
+			return word.toUpperCase();
 		}
 		else {
 			String result = "";

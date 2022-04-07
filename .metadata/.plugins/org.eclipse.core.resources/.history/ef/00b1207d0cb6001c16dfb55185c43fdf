@@ -4,33 +4,46 @@ public class StringLab {
 	public static void main(String[] args) {
 		// Test capitalize
 		System.out.println("**Test capitalize**");
-		System.out.print("capitalize(\"all lowercase\"): " + capitalize("all lowercase"));
-		System.out.print("\ncapitalize(\" \"): " + capitalize(""));
-		System.out.print("\ncapitalize(\"l\"): " + capitalize("l")); 
+		System.out.print("capitalize(\"all lowercase\"): ");
+		capitalize("all lowercase");
+		System.out.print("\ncapitalize(\" \"): ");
+		capitalize("");
+		System.out.print("\ncapitalize(\"l\"): "); 
+		capitalize("l");
 		System.out.println("\n");
 		
 		// Test wheresWaldo
 		System.out.println("**Test wheresWaldo**");
-		System.out.print("wheresWaldo(\"test\"): " + wheresWaldo("test"));
-		System.out.print("\nwheresWaldo(\"waldowaldo\"): " + wheresWaldo("waldowaldo"));
-		System.out.print("\nwheresWaldo(\"gggggggwaldo\"): " + 		wheresWaldo("gggggggwaldo"));
+		System.out.print("wheresWaldo(\"test\"): ");
+		wheresWaldo("test");
+		System.out.print("\nwheresWaldo(\"waldowaldo\"): ");
+		wheresWaldo("waldowaldo");
+		System.out.print("\nwheresWaldo(\"gggggggwaldo\"): ");
+		wheresWaldo("gggggggwaldo");
 		System.out.println("\n");
 		
 		// Test firstThingsFirst
 		System.out.println("**Test firstThingsFirst**");
-		System.out.print("firstThingsFirst(\"A\", \"C\"): " + firstThingsFirst("A", "C"));
-		System.out.print("\nfirstThingsFirst(\"a\", \"A\"): " + firstThingsFirst("a", "A"));
-		System.out.print("\nfirstThingsFirst(\"I don't know the alphabet\", \"and my name is Tim\"): "
-						+ firstThingsFirst("I don't know the alphabet", "and my name is Tim"));
-		System.out.print("\nfirstThingsFirst(\"A\", \"A\"): " + firstThingsFirst("A", "A"));
+		System.out.print("firstThingsFirst(\"A\", \"C\"): ");
+		firstThingsFirst("A", "C");
+		System.out.print("\nfirstThingsFirst(\"a\", \"A\"): ");
+		firstThingsFirst("a", "A");
+		System.out.print("\nfirstThingsFirst(\"I don't know the alphabet\", \"and my name is Tim\"): ");
+		firstThingsFirst("I don't know the alphabet", "and my name is Tim");
+		System.out.print("\nfirstThingsFirst(\"A\", \"A\"): ");
+		firstThingsFirst("A", "A");
 		System.out.println("\n");
 		
 		// Test reverse
 		System.out.println("**Test reverse**");
-		System.out.print("reverse(\"forward\"): " + reverse("forward"));
-		System.out.print("\nreverse(\"\"): " + reverse(""));
-		System.out.print("\nreverse(\"sdrawkcab\"): " + reverse("sdrawkcab"));
-		System.out.print("\nreverse(\"1\"): " + reverse("1"));
+		System.out.print("reverse(\"forward\"): ");
+		reverse("forward");
+		System.out.print("\nreverse(\"\"): ");
+		reverse("");
+		System.out.print("\nreverse(\"sdrawkcab\"): ");
+		reverse("sdrawkcab");
+		System.out.print("\nreverse(\"1\"): ");
+		reverse("1");
 		System.out.println("\n");
 		
 		// Test soLong
@@ -43,12 +56,14 @@ public class StringLab {
 		
 		// Test afterMath
 		System.out.println("**Test afterMath**");
-		System.out.print("afterMath(\"She aced the mathematics test!\"): "
-						+ afterMath("She aced the mathematics test!"));
-		System.out.print("\nafterMath(\"My floor mat is so keen!\"): "
-						+ afterMath("My floor mat is so keen!"));
-		System.out.print("\nafterMath(\"\"): " + afterMath(""));
-		System.out.print("\nafterMath(\"Math wooooo! mAtH\"): " + afterMath("Math wooooo! mAtH"));
+		System.out.print("afterMath(\"She aced the mathematics test!\"): ");
+		afterMath("She aced the mathematics test!");
+		System.out.print("\nafterMath(\"My floor mat is so keen!\"): ");
+		afterMath("My floor mat is so keen!");
+		System.out.print("\nafterMath(\"\"): ");
+		afterMath("");
+		System.out.print("\nafterMath(\"Math wooooo! mAtH\"): ");
+		afterMath("Math wooooo! mAtH");
 		System.out.println("\n");
 
 		// Test letterize
@@ -73,49 +88,43 @@ public class StringLab {
 
 	}
 	
-	public static String capitalize(String word) {
-		
+	public static void capitalize(String word) {
 		if(word.length() < 2) {
 			if(word.length() == 0) {
-				return word;
+				return;
 			}
-			else {
-				return word.toUpperCase();
-			}
-		}
-		else {
-			String result = "";
-			result += word.substring(0,1).toUpperCase();
-			result += word.substring(1).toLowerCase();
-			return result;
+			System.out.print(word.toUpperCase());
+			return;
 		}
 		
+		System.out.print(word.substring(0,1).toUpperCase());
+		System.out.print(word.substring(1).toLowerCase());
 	}
 	
-	public static String wheresWaldo(String phrase) {
+	public static void wheresWaldo(String phrase) {
 		int location = phrase.toLowerCase().indexOf("waldo");
 		if(location == -1) {
-			return "Error: waldo not found";
+			System.out.print("Error: Waldo not found");
+			return;
 		}
 		
-		return location + "";
+		System.out.print(location);
 	}
 	
-	public static String firstThingsFirst(String a, String b) {
+	public static void firstThingsFirst(String a, String b) {
 		if(a.compareTo(b) < 0) {
-			return a + " " + b;
+			System.out.print(a + " " + b);
+			return;
 		}
-		else {
-			return b + " " + a;
-		}
+		
+		System.out.print(b + " " + a);
 	}
 	
-	public static String reverse(String s) {
-		String result = "";
+	public static void reverse(String s) {
 		for(int i = s.length() - 1; i > -1; i--) {
-			result += s.charAt(i);
+			System.out.print(s.charAt(i));
 		}
-		return result;
+		
 	}
 	
 	public static void soLong(String a, String b) {
@@ -132,14 +141,15 @@ public class StringLab {
 		}
 	}
 	
-	public static String afterMath(String phrase) {
+	public static void afterMath(String phrase) {
 		int index = (phrase.toLowerCase()).indexOf("math");
 		
 		if(index == -1) {
-			return "\"math\" not found";
+			System.out.print("dud");
+			return;
 		}
 		
-		return phrase.substring(index);
+		System.out.print(phrase.substring(index));
 	}
 	
 	public static void letterize(String word) {
