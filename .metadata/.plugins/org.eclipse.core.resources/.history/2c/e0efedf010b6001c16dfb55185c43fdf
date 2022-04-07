@@ -1,0 +1,23 @@
+
+public class StringMethods {
+
+	
+	public static String capitalize(String word) {
+		
+		if(word.length() < 2) {			
+			if(word.length() == 0) {		//check if word is empty
+				return word;
+			}
+			else {							//word has a single character
+				return word.toUpperCase();
+			}
+		}
+		else {
+			String result = "";
+			result += word.substring(0,1).toUpperCase();
+			result += word.substring(1).toLowerCase();
+			return result;
+		}
+		
+	}	
+}

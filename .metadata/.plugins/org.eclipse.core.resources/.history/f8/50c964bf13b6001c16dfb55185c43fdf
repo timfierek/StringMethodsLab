@@ -1,8 +1,7 @@
 
 /**
- * StringLab contains only a main method which tests all methods in StringMethods.java.
  * 
- * @author Tim Fierek
+ * @author Tim
  *
  */
 public class StringLab {
