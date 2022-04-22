@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringMethodsTest" project="StringAndMethodsLab" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="StringMethodsTest" time="0.01" uniqueid="[engine:junit-jupiter]/[class:StringMethodsTest]">
+    <testcase name="testWheresWaldo" classname="StringMethodsTest" time="0.009" displayname="testWheresWaldo()" uniqueid="[engine:junit-jupiter]/[class:StringMethodsTest]/[method:testWheresWaldo()]"/>
+    <testcase name="testCapitalize" classname="StringMethodsTest" time="0.001" displayname="testCapitalize()" uniqueid="[engine:junit-jupiter]/[class:StringMethodsTest]/[method:testCapitalize()]"/>
+  </testsuite>
+</testrun>

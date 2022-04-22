@@ -83,17 +83,15 @@ public class StringMethods {
 	 * @param a String to be compared by length
 	 * @param b String to be compared by length
 	 */
-	public static void soLong(String a, String b) {
+	public static String soLong(String a, String b) {
 		if(a.length() == b.length()) {
-			System.out.print(a + " " + b);
-			return;
+			return (a + " " + b);
 		}
 		else if(a.length() > b.length()) {
-			System.out.print(a);
-			return;
+			return a;
 		}
 		else {
-			System.out.print(b);
+			return b;
 		}
 	}
 	
@@ -118,10 +116,13 @@ public class StringMethods {
 	 * 
 	 * @param word String to be printed 1 character at a time
 	 */
-	public static void letterize(String word) {
+	public static String letterize(String word) {
+		String out = "";
 		for(int i = 0; i < word.length(); i++) {
+			out += (word.substring(i, i+1) + " ");
 			System.out.println(word.charAt(i));
 		}
+		return out;
 	}
 	
 	/**
@@ -129,7 +130,7 @@ public class StringMethods {
 	 * 
 	 * @param word String to be converted to camelCase
 	 */
-	public static void camelCase(String word) {
+	public static String camelCase(String word) {
 		String[] separateWords = word.split(" ");
 		String result = separateWords[0];
 		
@@ -143,6 +144,6 @@ public class StringMethods {
 				result += (cur.substring(1).toLowerCase());
 			}
 		}
-		System.out.print(result);
+		return result;
 	}
 }
